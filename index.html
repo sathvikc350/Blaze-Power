@@ -25,6 +25,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
 
 
 </head>
@@ -74,7 +75,15 @@
 
             <h2>About </h2>
             <p>We are a lithium ion Advanced Cathode Materials &
-               Cells technology company run by industry and academic R&D leaders.</p>
+               Cells technology company run by industry and academic R&D leaders. <br>
+               Our strong understanding, in-depth, of sciences  at the atomic level
+               (Architecture, Crystallinity,  single-phase)  gives us spirit of grasping the essence
+               of problem.  While focusing on  research and development , we  capitalize on current Mechanisms.
+               We constantly aim to improve core performance and achieve profitable production applying the
+                cutting-edge-technology.
+
+
+                </p>
           </div>
 
           <div class="col-lg-3">
@@ -84,21 +93,148 @@
 </p>
           </div>
           <div class="col-lg-3">
-            <h3>TEAM</h3>
-            <p>Our small team of experts has over 50 years of combined experience in the Energy & Technology sectors.</p>
+            <h3>VISION</h3>
+            <p>To Build World Class Customized Batteries which Generates
+                Energy and Power to Light the Planet Green</p>
           </div>
         </div>
       </div>
     </section><!-- End About Section -->
+    <style>
+        .zc-body {
+          background-color: #fff;
+        }
 
+        .chart--container {
+          width: 100%;
+          height: 100%;
+          min-height: 530px;
+        }
+
+        .zc-ref {
+          display: none;
+        }
+      </style>
     <!-- ======= Speakers Section ======= -->
-   <section id="speakers">
+    <section id="speakers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>R&D</h2>
-          <p>Advance Technology</p>
+          <p>Blooman Technology</p>
         </div>
 
+        <div class="container">
+
+  <div id="myChart" class="chart--container">
+    <!-- <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a> -->
+  </div>
+  <script>
+    // ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+    var myConfig = {
+      type: 'radar',
+      plot: {
+        aspect: 'area',
+        animation: {
+          effect: 3,
+          sequence: 1,
+          speed: 700
+        }
+      },
+      scaleV: {
+        visible: false
+      },
+      scaleK: {
+        values: '0:5:1',
+        labels: ['Charge', 'Density', 'Cost', 'Safety', 'Power', 'Energy'],
+        item: {
+          fontColor: '#607D8B',
+          backgroundColor: "white",
+          borderColor: "#aeaeae",
+          borderWidth: 1,
+          padding: '5 10',
+          borderRadius: 10
+        },
+        refLine: {
+          lineColor: '#c10000'
+        },
+        tick: {
+          lineColor: '#59869c',
+          lineWidth: 2,
+          lineStyle: 'dotted',
+          size: 20
+        },
+        guide: {
+          lineColor: "#607D8B",
+          lineStyle: 'solid',
+          alpha: 0.3,
+          backgroundColor: "#c5c5c5 #718eb4"
+        }
+      },
+      series: [{
+          values: [59, 39, 38, 19, 21, 35],
+          text: 'farm'
+        },
+        {
+          values: [20, 20, 54, 41, 41, 35],
+          lineColor: '#53a534',
+          backgroundColor: '#689F38'
+        }
+      ]
+    };
+
+    zingchart.render({
+      id: 'myChart',
+      data: myConfig,
+      height: '100%',
+      width: '100%'
+    });
+  </script>
+
+  <div class="container-fluid">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  </div>
+<br>
+<div class="row">
+
+
+  <div class="col-lg-6 col-md-2">
+    <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/img/speakers/graph.png" alt="file crashed" height="450px" width="575px">
+      <!-- <div class="details">
+        <h3><a href="R&D-1.html">Energy Density</a></h3>
+        <p>High Volumetric Energy and Power</p>
+
+      </div> -->
+    </div>
+  </div>
+
+  <div class="col-lg-6 col-md-2">
+
+      <div class="details">
+        <h3>Blooman Energy Storage R&D/ Technology Projection:</h3>
+        <p>Demand for Electrical Vehicles/Stationary storage space is increasing rapidly and proportionally
+          a demand for Batteries that are lightweight, High energy density,
+           power, safe, low cost  and have longer life over a life time of heavy discharge is rising.</p>
+
+      </div>
+
+  </div>
+
+  </div>
+
+        </div>
+<br>
         <div class="row">
           <div class="col-lg-6 col-md-2">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
@@ -242,8 +378,8 @@
             <div class="social-links">
               <a href="https://twitter.com/BloomanClean" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="https://www.facebook.com/Blooman-Clean-Energy-Consultant-100179934925597/?modal=admin_todo_tour" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
               <a href="https://www.linkedin.com/in/blooman-clean-energy-96a6101a3/" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
 
@@ -264,7 +400,7 @@
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
       -->
-        Designed by <a href="">Blooman IT Team</a>
+        Designed by <a href="">Blooman</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
