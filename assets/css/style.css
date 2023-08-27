@@ -565,6 +565,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .intro-container {
+  max-width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
